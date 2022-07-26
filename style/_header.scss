@@ -1,0 +1,13 @@
+.header {
+    background: #0C0B08;
+    text-align: center;
+
+    // .header__test
+
+    &__test {
+        color:beige;
+        font-family: Bestermind;
+        font-size: 4em;
+        // font-style:italic;
+    }
+}
