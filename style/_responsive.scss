@@ -1,5 +1,74 @@
-[class*="__container"] {
-    max-width: 1710px;
-    margin: 0 auto;
-    padding: 0 190px;
+/*====переменные======*/
+
+$wxxl: 1400px;
+$xxl: 1320px;
+
+$wxl: 1200px;
+$xl: 1140px;
+
+$wlg: 992px;
+$lg: 960px;
+
+$wmd: 768px;
+$md: 720px;
+
+$wsm: 576px;
+$sm: 540px;
+
+$wxs: 575.8px;
+
+
+  @media screen and (max-width: $wxs) {
+    [class*="__container"] {
+    width: auto;
   }
+}
+
+  @media screen and (min-width: $wsm) {
+    [class*="__container"] {
+    max-width: $sm;
+    margin: 0 auto;
+  }
+}
+
+  @media screen and (min-width: $wmd) {
+    [class*="__container"] {
+    max-width: $md;
+    margin: 0 auto;
+  }
+}
+
+  @media screen and (min-width: $wlg) {
+    [class*="__container"] {
+    max-width: $lg;
+    margin: 0 auto;
+  }
+}
+
+  @media screen and (min-width: $wxl) {
+    [class*="__container"] {
+    max-width: $xl;
+    margin: 0 auto;
+  }
+}
+
+  @media screen and (min-width: $wxxl) {
+    [class*="__container"] {
+    max-width: $xxl;
+    margin: 0 auto;
+  }
+}
+
+[class*="__container"] {
+  max-width: 1330px;
+  margin: 0 auto;
+  padding: 0px 15px 0px 15px;
+}
+
+
+[class*="__container--wide"] {
+  max-width: 1710px;
+  margin: 0 auto;
+  padding: 0px 15px 0px 15px;
+}
+

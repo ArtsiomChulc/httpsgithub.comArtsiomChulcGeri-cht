@@ -55,21 +55,58 @@
   font-style: normal;
 }
 
-.header {
-  background: #0C0B08;
-  text-align: center;
+/*====переменные======*/
+@media screen and (max-width: 575.8px) {
+  [class*="__container"] {
+    width: auto;
+  }
 }
 
-.header__test {
-  color: beige;
-  font-family: Bestermind;
-  font-size: 4em;
+@media screen and (min-width: 576px) {
+  [class*="__container"] {
+    max-width: 540px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  [class*="__container"] {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  [class*="__container"] {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  [class*="__container"] {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  [class*="__container"] {
+    max-width: 1320px;
+    margin: 0 auto;
+  }
 }
 
 [class*="__container"] {
+  max-width: 1330px;
+  margin: 0 auto;
+  padding: 0px 15px 0px 15px;
+}
+
+[class*="__container--wide"] {
   max-width: 1710px;
   margin: 0 auto;
-  padding: 0 190px;
+  padding: 0px 15px 0px 15px;
 }
 
 html {
@@ -118,8 +155,8 @@ html {
 body {
   line-height: 1;
   overflow-x: hidden;
-  font-family: 'Roboto', sans-serif;
-  background: #FDFDFB;
+  font-family: 'OpenSans', sans-serif;
+  background: #0C0B08;
 }
 
 h1,

@@ -1,13 +1,112 @@
-.header {
-    background: #0C0B08;
-    text-align: center;
 
-    // .header__test
+// .header {
+//     background: #0C0B08;
 
-    &__test {
-        color:beige;
-        font-family: Bestermind;
-        font-size: 4em;
-        // font-style:italic;
-    }
-}
+//     // .header__container
+
+//     &__container {
+//     }
+
+//     // .header__content
+
+//     &__content {
+//         display: flex;
+//         justify-content: space-between;
+//         flex-wrap: wrap;
+//         align-items: center;
+//         padding: 20px 0;
+//     }
+
+//     // .header__logo
+
+//     &__logo {
+//     }
+
+//     // .header__logotext
+
+//     &__logotext {
+//     }
+
+//     // .header__menu
+
+//     &__menu {
+//         & ul {
+//             display: flex;
+//             justify-content: space-between;
+//             gap: 32px;
+//         }
+//     }
+
+//     // .header__lists
+
+//     &__lists {
+//     }
+
+//     // .header__list
+
+//     &__list {
+//         font-family: OpenSans;
+//         font-weight: 400;
+//         font-size: 16px;
+//         line-height: 1.75;
+//         letter-spacing: 0.04em;
+//         color: #FFFFFF;
+//     }
+
+//     // .header__actions
+
+//     &__actions {
+//         display: inline-flex;
+//         gap: 50px;
+//         align-items: center;
+//         position: relative;
+//         & a {
+//             font-family: OpenSans;
+//             font-weight: 600;
+//             font-size: 16px;
+//             line-height: 1.75;
+//             letter-spacing: 0.05em;
+//             text-transform: capitalize;
+//             color: #FFFFFF;
+//         }
+//     }
+
+//     // .header__reg
+
+//     &__reg {
+//     }
+
+//     // .header__linever
+
+//     &__linever {
+//         display: inline-block;
+//         width: 1px;
+//         height: 57px;
+//         background-color: rgba(255, 255, 255, 0.372);
+//     }
+
+//     // .header__book
+
+//     &__book {
+//         font-family: OpenSans;
+//         font-weight: 600;
+//         font-size: 16px;
+//         line-height: 1.75;
+//         letter-spacing: 0.05em;
+//         text-transform: capitalize;
+//         color: #FFFFFF;
+//         position: absolute;
+//         top: 28%;
+//         left: 260px;
+//         width: 100%;
+// }
+//     }
+
+// .logo {
+//     font-family: CormorantSC;
+//     font-size: calc(23px + 21 * (100vw / 1920)); 
+//     text-transform: uppercase;
+//     letter-spacing: 0.04em;
+//     line-height: 1.3;
+//     color: #FFFFFF;
+// }
