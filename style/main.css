@@ -56,11 +56,9 @@
 }
 
 .header__content {
-  display: -ms-grid;
-  display: grid;
-  gap: 32px;
-  -ms-grid-columns: (1fr)[12];
-      grid-template-columns: repeat(12, 1fr);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -68,11 +66,15 @@
 }
 
 .header__logo {
-  grid-column: span 3;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 360px;
+          flex: 0 0 360px;
 }
 
 .header__menu {
-  grid-column: span 6;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 
 .header__menu ul {
@@ -92,14 +94,16 @@
 
 .header__list {
   font-weight: 400;
-  font-size: 16px;
+  font-size: calc(12px + 4 * (100vw / 1920));
   line-height: 1.75;
   letter-spacing: 0.04em;
   color: #FFFFFF;
 }
 
 .header__actions {
-  grid-column: span 3;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 360px;
+          flex: 0 0 360px;
 }
 
 .logo {
@@ -121,12 +125,12 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  gap: 10px 50px;
+  gap: 10px 12%;
 }
 
 .action-header__reg {
   font-weight: 600;
-  font-size: 16px;
+  font-size: calc(12px + 4 * (100vw / 1920));
   line-height: 1.75;
   letter-spacing: 0.05em;
   text-transform: capitalize;
@@ -144,7 +148,7 @@
 
 .action-header__book {
   font-weight: 600;
-  font-size: 16px;
+  font-size: calc(12px + 4 * (100vw / 1920));
   line-height: 1.75;
   letter-spacing: 0.05em;
   text-transform: capitalize;
