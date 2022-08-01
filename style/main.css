@@ -280,12 +280,6 @@
   }
 }
 
-@media (max-width: 526.98px) {
-  .action-header {
-    display: none;
-  }
-}
-
 .action-header__reg {
   font-weight: 600;
   font-size: calc(12px + 4 * (100vw / 1920));
@@ -317,6 +311,64 @@
   letter-spacing: 0.05em;
   text-transform: capitalize;
   color: #FFFFFF;
+}
+
+.subheader__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.subheader__hash {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 310px;
+          flex: 1 1 310px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+}
+
+.subheader__hashbar {
+  padding: 0px 0px 40px 0px;
+}
+
+.subheader__text {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+}
+
+.subheader__picture {
+  position: relative;
+  overflow: hidden;
+  max-width: 619px;
+  padding: 0px 0px 45% 0px;
+}
+
+.subheader__images {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.subheader__scroll {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 310px;
+          flex: 1 1 310px;
 }
 
 /*====переменные======*/

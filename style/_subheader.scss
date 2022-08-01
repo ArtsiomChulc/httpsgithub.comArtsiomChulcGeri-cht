@@ -1,0 +1,112 @@
+.subheader {
+
+    // .subheader__container
+
+    &__container {
+    }
+
+    // .subheader__container--wide
+
+    &__container--wide {
+    }
+
+    // .subheader__content
+
+    &__content {
+        display: flex;
+    }
+
+    // .subheader__hash
+
+    &__hash {
+        flex: 1 1 310px;
+        display: inline-flex;
+        writing-mode: vertical-lr;
+        justify-content: center;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 175%;
+        letter-spacing: 0.04em;
+        color: #FFFFFF;
+    }
+
+    // .subheader__hashbar
+
+    &__hashbar {
+        padding: 0px 0px 40px 0px;
+    }
+
+    // .subheader__hashgeritch
+
+    &__hashgeritch {
+    }
+
+    // .subheader__text
+
+    &__text {
+        flex: 0 1 auto;
+    }
+
+    // .subheader__description
+
+    &__description {
+    }
+
+    // .subheader__title
+
+    &__title {
+    }
+
+    // .subheader__subtitle
+
+    &__subtitle {
+    }
+
+    // .subheader__button
+
+    &__button {
+    }
+
+    // .subheader__picture
+
+    &__picture {
+        position: relative;
+        overflow: hidden;
+        max-width: 619px;
+        padding: 0px 0px 45% 0px;
+        
+    }
+
+    // .subheader__images
+
+    &__images {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    // .subheader__img
+
+    &__img {
+    }
+
+    // .subheader__counter
+
+    &__counter {
+    }
+
+    // .subheader__scroll
+
+    &__scroll {
+        flex: 1 1 310px;
+    }
+
+    // .subheader__scroll-text
+
+    &__scroll-text {
+    }
+}
+.button {
+}
