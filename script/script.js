@@ -244,3 +244,10 @@ DynamicAdapt.prototype.arraySort = function (arr) {
 
 const da = new DynamicAdapt("max");
 da.init();
+
+
+// Добавляем бэкграунд для паралакса
+
+window.addEventListener("load", function () {
+	document.body.insertAdjacentHTML('beforeend', '<div class="main-bg"></div>')
+})

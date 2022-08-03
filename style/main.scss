@@ -2,10 +2,18 @@
 @import "header";
 @import "subheader";
 @import "responsive";
+@import "history";
 @import "null";
 
 
-
+.main-bg {
+    background: url('../img/body/bodyBg.png') center / cover no-repeat;
+    position: fixed;
+    left: 0;
+    top: -10%;
+    width: 100%;
+    height: 120%;
+}
 
 
 

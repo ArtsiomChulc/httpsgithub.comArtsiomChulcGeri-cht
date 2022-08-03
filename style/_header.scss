@@ -1,6 +1,8 @@
 @import 'burger';
 .header {
-
+    background: #0C0B08;
+    position: relative;
+    z-index: 50;
     // .header__container
     &__container {
     }

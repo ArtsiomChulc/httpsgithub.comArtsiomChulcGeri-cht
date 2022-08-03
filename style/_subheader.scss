@@ -1,4 +1,8 @@
 .subheader {
+    position: relative;
+    z-index: 52;
+    background: #0C0B08;
+    height: 100vh;
 
     // .subheader__container
 
@@ -14,52 +18,35 @@
 
     &__content {
         display: flex;
+        justify-content: space-between;
+        padding: 73px 0px 0px 0px;
     }
 
     // .subheader__hash
 
     &__hash {
-        flex: 1 1 310px;
-        display: inline-flex;
+        flex: 0 1 190px;
+        display: flex;
         writing-mode: vertical-lr;
         justify-content: center;
+        align-items: flex-end;
         font-weight: 400;
         font-size: 18px;
         line-height: 175%;
         letter-spacing: 0.04em;
         color: #FFFFFF;
+        transform: rotate(180deg);
+        gap: 40px;
     }
 
     // .subheader__hashbar
 
     &__hashbar {
-        padding: 0px 0px 40px 0px;
     }
 
     // .subheader__hashgeritch
 
     &__hashgeritch {
-    }
-
-    // .subheader__text
-
-    &__text {
-        flex: 0 1 auto;
-    }
-
-    // .subheader__description
-
-    &__description {
-    }
-
-    // .subheader__title
-
-    &__title {
-    }
-
-    // .subheader__subtitle
-
-    &__subtitle {
     }
 
     // .subheader__button
@@ -70,26 +57,19 @@
     // .subheader__picture
 
     &__picture {
-        position: relative;
-        overflow: hidden;
-        max-width: 619px;
-        padding: 0px 0px 45% 0px;
+        
         
     }
 
     // .subheader__images
 
     &__images {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        object-fit: cover;
     }
 
     // .subheader__img
 
     &__img {
+        
     }
 
     // .subheader__counter
@@ -100,13 +80,137 @@
     // .subheader__scroll
 
     &__scroll {
-        flex: 1 1 310px;
+        flex: 0 1 190px;
+        text-align:end;
+        align-self: flex-end;
+        position: relative;
+        &::before {
+            content: '';
+            transform: rotate(90deg);
+            position: absolute;
+            width: 61px;
+            height: 1.5px;
+            top: -160%;
+            left: 60%;
+            // display: block;
+            background: linear-gradient(rgba(220, 202, 135, 1), rgba(220, 202, 135, 1), rgba(220, 202, 135, 0.24));
+        }
     }
 
     // .subheader__scroll-text
 
     &__scroll-text {
+        font-family: 'CormorantUpright';
+        flex: 0 1 190px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 175%;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #DCCA87;
+    }
+}
+
+.content-main {
+    flex: 0 1 100%;
+    display: flex;
+    justify-content: space-between;
+    
+
+    // .content-main__text
+
+    &__text {
+        flex: 0 1 453px;
+        padding: 177px 0px 0px 0px;
+    }
+
+    // .content-main__description
+
+    &__description {
+        font-family: 'CormorantUpright';
+        font-size: 23px;
+        line-height: 180%;
+        letter-spacing: 0.04em;
+        text-transform: capitalize;
+        font-feature-settings: 'tnum' on, 'lnum' on;
+        color: #FFFFFF;        
+        &::after {
+            content: '';
+            display: block;
+            width: 40px;
+            height: 9px;
+            background: url('../img/subheader/decor.svg') 0 0 no-repeat;
+        }
+    }
+
+    // .content-main__title
+
+    &__title {
+        font-family: 'CormorantUpright';
+        font-weight: 700;
+        font-size: calc(50px + 40 * (100vw / 1920));
+        line-height: 130%;
+        letter-spacing: 0.04em;
+        text-transform: capitalize;
+        color: #DCCA87;
+        margin: 8px 0px 32px 0px;
+    }
+
+    // .content-main__subtitle
+
+    &__subtitle {
+        font-family: 'CormorantUpright';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 175%;
+        letter-spacing: 0.04em;
+        color: #AAAAAA;
+        margin: 0px 0px 32px 0px;
+    }
+
+    // .content-main__picture
+
+    &__picture {
+        overflow: hidden;
+        flex: 0 1 619px;
+        position: relative;
+    }
+
+    // .content-main__images
+
+    &__images {
+        position: relative;
+    }
+
+    // .content-main__img
+
+    &__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    // .content-main__counter
+
+    &__counter {
+        position: absolute;
+        display: block;
+        bottom: -20%;
+        left: 50%;
     }
 }
 .button {
+    font-family: 'CormorantUpright';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 175%;
+    letter-spacing: 0.04em;
+    color: #0C0B08;
+    padding: 8px 32px;
+    background: #DCCA87;
 }
