@@ -115,6 +115,8 @@
 
 .action-header {
     display: flex;
+    position: relative;
+    z-index: 50;
     align-items: center;
     justify-content: flex-end;
     flex: 0 0 360px;

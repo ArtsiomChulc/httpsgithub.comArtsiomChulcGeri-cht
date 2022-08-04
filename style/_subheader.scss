@@ -1,8 +1,8 @@
 .subheader {
     position: relative;
-    z-index: 52;
+    z-index: 40;
     background: #0C0B08;
-    height: 100vh;
+    height: 100%;
 
     // .subheader__container
 
@@ -27,6 +27,7 @@
     &__hash {
         flex: 0 1 190px;
         display: flex;
+        flex-wrap: wrap;
         writing-mode: vertical-lr;
         justify-content: center;
         align-items: flex-end;
@@ -116,6 +117,7 @@
     flex: 0 1 100%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     
 
     // .content-main__text
@@ -149,7 +151,7 @@
     &__title {
         font-family: 'CormorantUpright';
         font-weight: 700;
-        font-size: calc(50px + 40 * (100vw / 1920));
+        font-size: calc(30px + 60 * (100vw / 1920));
         line-height: 130%;
         letter-spacing: 0.04em;
         text-transform: capitalize;
@@ -182,6 +184,7 @@
 
     &__images {
         position: relative;
+        padding: 0px 0px 58% 0px;
     }
 
     // .content-main__img
@@ -191,7 +194,7 @@
         top: 0;
         left: 0;
         width: 100%;
-        object-fit: cover;
+        object-fit: cover;        
     }
 
     // .content-main__counter
