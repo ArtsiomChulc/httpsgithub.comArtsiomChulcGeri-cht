@@ -333,7 +333,7 @@
   position: relative;
   z-index: 40;
   background: #0C0B08;
-  height: 100%;
+  height: auto;
 }
 
 .subheader__content {
@@ -433,7 +433,13 @@
   -webkit-box-flex: 0;
       -ms-flex: 0 1 453px;
           flex: 0 1 453px;
-  padding: 177px 0px 0px 0px;
+  padding: 100px 0px 0px 0px;
+}
+
+@media screen and (max-width: 767.9px) {
+  .content-main__text {
+    padding: 20px 0px 0px 0px;
+  }
 }
 
 .content-main__description {
@@ -483,6 +489,7 @@
       -ms-flex: 0 1 619px;
           flex: 0 1 619px;
   position: relative;
+  margin: 10px 0px 50px 0px;
 }
 
 .content-main__images {
@@ -507,6 +514,10 @@
 }
 
 .button {
+  margin: 0px 0px 60px 0px;
+}
+
+.button__link {
   font-family: 'CormorantUpright';
   font-style: normal;
   font-weight: 700;
