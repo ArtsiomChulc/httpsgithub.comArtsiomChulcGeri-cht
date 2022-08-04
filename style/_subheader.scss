@@ -91,10 +91,16 @@
             position: absolute;
             width: 61px;
             height: 1.5px;
+            display: block;
             top: -160%;
             left: 60%;
-            // display: block;
             background: linear-gradient(rgba(220, 202, 135, 1), rgba(220, 202, 135, 1), rgba(220, 202, 135, 0.24));
+            @media screen and (max-width: 767.9px) {
+                left: 50%;
+            }
+            @media screen and (max-width: 476.9px) {
+                left: 40%;
+            }
         }
     }
 

@@ -393,12 +393,25 @@
   position: absolute;
   width: 61px;
   height: 1.5px;
+  display: block;
   top: -160%;
   left: 60%;
   background: -webkit-gradient(linear, left top, left bottom, from(#dcca87), color-stop(#dcca87), to(rgba(220, 202, 135, 0.24)));
   background: -webkit-linear-gradient(#dcca87, #dcca87, rgba(220, 202, 135, 0.24));
   background: -o-linear-gradient(#dcca87, #dcca87, rgba(220, 202, 135, 0.24));
   background: linear-gradient(#dcca87, #dcca87, rgba(220, 202, 135, 0.24));
+}
+
+@media screen and (max-width: 767.9px) {
+  .subheader__scroll::before {
+    left: 50%;
+  }
+}
+
+@media screen and (max-width: 476.9px) {
+  .subheader__scroll::before {
+    left: 40%;
+  }
 }
 
 .subheader__scroll-text {
