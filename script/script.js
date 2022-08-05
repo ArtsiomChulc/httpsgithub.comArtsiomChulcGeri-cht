@@ -1,4 +1,3 @@
-"use strict";
 
 let menuBurger = document.querySelector('.menu-burger');
 let headerMenu = document.querySelector('.header__menu');
@@ -251,3 +250,39 @@ da.init();
 window.addEventListener("load", function () {
 	document.body.insertAdjacentHTML('beforeend', '<div class="main-bg"></div>')
 })
+
+// ========== SLIDER ============
+let imgArray = document.querySelectorAll('.img-slide img');
+let currentIndex = 0;
+console.log(currentIndex);
+function slider() {
+    for (i = 0; i < imgArray.length; i++) {
+        imgArray[i].classList.add('opacity-null');
+    }
+    imgArray[currentIndex].classList.remove('opacity-null');
+    
+}
+
+document.querySelector('.img-slide').onclick = slider;
+
+document.getElementById('next-btn').onclick = function() { 
+    if (currentIndex == imgArray.length-1) {
+        currentIndex = 0;
+    } else {
+        currentIndex++;
+    }
+    slider();
+};
+
+document.getElementById('prev-btn').onclick = function() { 
+    if (currentIndex-1 == -1) {
+       currentIndex = imgArray.length-1;
+    } else {
+        currentIndex--;
+    }
+    slider();
+};
+
+// setInterval(showNextBtnAuto, 3000);
+
+

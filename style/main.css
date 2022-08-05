@@ -510,6 +510,12 @@
   padding: 0px 0px 58% 0px;
 }
 
+@media screen and (max-width: 767.9px) {
+  .content-main__images {
+    padding: 0px 0px 95% 0px;
+  }
+}
+
 .content-main__img {
   position: absolute;
   top: 0;
@@ -517,13 +523,35 @@
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  opacity: 1;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.content-main__img.opacity-null {
+  opacity: 0;
 }
 
 .content-main__counter {
   position: absolute;
+  z-index: 42;
   display: block;
-  bottom: -20%;
+  bottom: 5%;
   left: 50%;
+  color: white;
+}
+
+.content-main__counter .btn-next,
+.content-main__counter .btn-prev {
+  color: white;
+  font-size: 32px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.content-main__counter .btn-prev {
+  margin: 0px 20px 0px 0px;
 }
 
 .button {
