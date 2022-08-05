@@ -545,13 +545,26 @@
 .content-main__counter .btn-next,
 .content-main__counter .btn-prev {
   color: white;
-  font-size: 32px;
+  font-size: 82px;
   background-color: transparent;
   cursor: pointer;
 }
 
+@media screen and (max-width: 767.9px) {
+  .content-main__counter .btn-next,
+  .content-main__counter .btn-prev {
+    background-color: #aba8a061;
+  }
+}
+
 .content-main__counter .btn-prev {
-  margin: 0px 20px 0px 0px;
+  margin: 0px 80px 0px 0px;
+}
+
+@media screen and (max-width: 767.9px) {
+  .content-main__counter .btn-prev {
+    margin: 0px 40px 0px 0px;
+  }
 }
 
 .button {
